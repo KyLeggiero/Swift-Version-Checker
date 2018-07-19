@@ -20,6 +20,10 @@ let languageVersion: String
     #error("Unknown language version")
 #elseif swift(>=4.2)
     languageVersion = "4.2"
+#elseif swift(>=4.1.51)
+    #error("Unknown language version")
+#elseif swift(>=4.1.50)
+    languageVersion = "4.1.50"
 #elseif swift(>=4.1.3)
     #error("Unknown language version")
 #elseif swift(>=4.1.2)
@@ -50,8 +54,14 @@ let languageVersion: String
     languageVersion = "3.3.1"
 #elseif swift(>=3.3)
     languageVersion = "3.3"
-#elseif swift(>=3.2.1)
+#elseif swift(>=3.2.4)
     #error("Unknown language version")
+#elseif swift(>=3.2.3)
+    languageVersion = "3.2.3"
+#elseif swift(>=3.2.2)
+    languageVersion = "3.2.2"
+#elseif swift(>=3.2.1)
+    languageVersion = "3.2.1"
 #elseif swift(>=3.2)
     languageVersion = "3.2"
 #elseif swift(>=3.1.2)
@@ -61,7 +71,7 @@ let languageVersion: String
 #elseif swift(>=3.1)
     languageVersion = "3.1"
 #elseif swift(>=3.0.3)
-    #error("Unknown language version")
+    fatalError("Unknown language version")
 #elseif swift(>=3.0.2)
     languageVersion = "3.0.2"
 #elseif swift(>=3.0.1)
@@ -69,33 +79,33 @@ let languageVersion: String
 #elseif swift(>=3.0)
     languageVersion = "3.0"
 #elseif swift(>=2.3.1)
-    #error("Unknown language version")
+    fatalError("Unknown language version")
 #elseif swift(>=2.3)
     languageVersion = "2.3"
 #elseif swift(>=2.2.1)
-    #error("Unknown language version")
+    fatalError("Unknown language version")
 #elseif swift(>=2.2)
     languageVersion = "2.2"
 #elseif swift(>=2.1.2)
-    #error("Unknown language version")
+    fatalError("Unknown language version")
 #elseif swift(>=2.1.1)
     languageVersion = "2.1.1"
 #elseif swift(>=2.1)
     languageVersion = "2.1"
 #elseif swift(>=2.0.1)
-    #error("Unknown language version")
+    fatalError("Unknown language version")
 #elseif swift(>=2.0)
     languageVersion = "2.0"
 #elseif swift(>=1.2.1)
-    #error("Unknown language version")
+    fatalError("Unknown language version")
 #elseif swift(>=1.2)
     languageVersion = "1.2"
 #elseif swift(>=1.1.1)
-    #error("Unknown language version")
+    fatalError("Unknown language version")
 #elseif swift(>=1.1)
     languageVersion = "1.1"
 #elseif swift(>=1.0.1)
-    #error("Unknown language version")
+    fatalError("Unknown language version")
 #elseif swift(>=1.0)
     languageVersion = "1.0"
 #else
