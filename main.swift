@@ -3,13 +3,17 @@
 //  What Swift version?
 //
 //  Created by Ben Leggiero on 2018-07-17.
-//  Copyright © 2018 Ben Leggiero BH-1-PS
+//  Copyright © 2020 Ben Leggiero BH-1-PS
 //
 
 let languageVersion: String
 
-#if swift(>=5.1.3)
+#if swift(>=5.2.1)
     #error("Unknown language version")
+#elseif swift(>=5.2)
+    languageVersion = "5.2"
+#elseif swift(>=5.1.3)
+    languageVersion = "5.1.3"
 #elseif swift(>=5.1.2)
     languageVersion = "5.1.2"
 #elseif swift(>=5.1.1)
@@ -156,4 +160,3 @@ print("Swift \(languageVersion)")
 //#endif
 //
 //print("Swift compiler \(compilerVersion)")
-
