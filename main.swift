@@ -10,6 +10,12 @@ let languageVersion: String
 
 #if swift(>=5.3)
     #error("Unknown language version")
+#elseif swift(>=5.2.4)
+    languageVersion = "5.2.4"
+#elseif swift(>=5.2.3)
+    languageVersion = "5.2.3"
+#elseif swift(>=5.2.2)
+    languageVersion = "5.2.2"
 #elseif swift(>=5.2.1)
     languageVersion = "5.2.1"
 #elseif swift(>=5.2)
