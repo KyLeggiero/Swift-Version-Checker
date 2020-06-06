@@ -20,8 +20,12 @@ let languageVersion: String
     languageVersion = "5.2.1"
 #elseif swift(>=5.2)
     languageVersion = "5.2"
+#elseif swift(>=5.1.6)
+    #error("Unknown language version")
+#elseif swift(>=5.1.5)
+    languageVersion = "5.1.5"
 #elseif swift(>=5.1.4)
-#error("Unknown language version")
+    languageVersion = "5.1.4"
 #elseif swift(>=5.1.3)
     languageVersion = "5.1.3"
 #elseif swift(>=5.1.2)
@@ -30,12 +34,22 @@ let languageVersion: String
     languageVersion = "5.1.1"
 #elseif swift(>=5.1)
     languageVersion = "5.1"
-#elseif swift(>=5.0.1)
+#elseif swift(>=5.0.4)
     #error("Unknown language version")
+#elseif swift(>=5.0.3)
+    languageVersion = "5.0.3"
+#elseif swift(>=5.0.2)
+    languageVersion = "5.0.2"
+#elseif swift(>=5.0.1)
+    languageVersion = "5.0.1"
 #elseif swift(>=5.0)
     languageVersion = "5.0"
-#elseif swift(>=4.2.2)
+#elseif swift(>=4.2.4)
     #error("Unknown language version")
+#elseif swift(>=4.2.3)
+    languageVersion = "4.2.3"
+#elseif swift(>=4.2.2)
+    languageVersion = "4.2.2"
 #elseif swift(>=4.2.1)
     languageVersion = "4.2.1"
 #elseif swift(>=4.2)
@@ -44,8 +58,10 @@ let languageVersion: String
     #error("Unknown language version")
 #elseif swift(>=4.1.50)
     languageVersion = "4.1.50"
-#elseif swift(>=4.1.3)
+#elseif swift(>=4.1.4)
     #error("Unknown language version")
+#elseif swift(>=4.1.3)
+    languageVersion = "4.1.3"
 #elseif swift(>=4.1.2)
     languageVersion = "4.1.2"
 #elseif swift(>=4.1.1)
