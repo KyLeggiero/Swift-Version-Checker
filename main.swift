@@ -8,8 +8,12 @@
 
 let languageVersion: String
 
-#if swift(>=5.3.1)
+#if swift(>=5.3.3)
     #error("Unknown language version")
+#elseif swift(>=5.3.2)
+    languageVersion = "5.3.2"
+#elseif swift(>=5.3.1)
+    languageVersion = "5.3.1"
 #elseif swift(>=5.3)
     languageVersion = "5.3"
 #elseif swift(>=5.2.5)
